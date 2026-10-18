@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 9: Pricing Table Comparison</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="max-w-6xl w-full mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Choose Your Plan</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      
+      <!-- Basic Plan -->
+      <div class="bg-white p-6 rounded-2xl shadow-md space-y-6 text-center">
+        <h3 class="text-xl font-bold text-gray-800">Basic</h3>
+        <p class="text-3xl font-extrabold text-gray-900">$9<span class="text-sm font-normal text-gray-500">/mo</span></p>
+        <ul class="text-gray-600 space-y-3 text-sm">
+          <li>1 Project</li>
+          <li>Basic Support</li>
+          <li>1GB Storage</li>
+        </ul>
+        <button class="w-full bg-gray-800 text-white font-semibold py-2 rounded-lg hover:bg-gray-900 transition-colors">Choose Basic</button>
+      </div>
+
+      <!-- Pro Plan (Highlighted) -->
+      <div class="bg-white p-8 rounded-2xl shadow-xl border-2 border-blue-500 space-y-6 text-center transform md:scale-105 z-10">
+        <span class="bg-blue-100 text-blue-600 text-xs font-bold uppercase px-3 py-1 rounded-full">Most Popular</span>
+        <h3 class="text-2xl font-bold text-gray-800">Pro</h3>
+        <p class="text-4xl font-extrabold text-blue-600">$29<span class="text-sm font-normal text-gray-500">/mo</span></p>
+        <ul class="text-gray-600 space-y-3 text-sm">
+          <li>Unlimited Projects</li>
+          <li>Priority Support</li>
+          <li>50GB Storage</li>
+          <li>Advanced Analytics</li>
+        </ul>
+        <button class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md">Choose Pro</button>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="bg-white p-6 rounded-2xl shadow-md space-y-6 text-center">
+        <h3 class="text-xl font-bold text-gray-800">Enterprise</h3>
+        <p class="text-3xl font-extrabold text-gray-900">$99<span class="text-sm font-normal text-gray-500">/mo</span></p>
+        <ul class="text-gray-600 space-y-3 text-sm">
+          <li>Dedicated Server</li>
+          <li>24/7 Support</li>
+          <li>Unlimited Storage</li>
+        </ul>
+        <button class="w-full bg-gray-800 text-white font-semibold py-2 rounded-lg hover:bg-gray-900 transition-colors">Choose Enterprise</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
